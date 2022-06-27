@@ -1,7 +1,3 @@
-t1 = input()
-t2 = int(input())
-h, m = list(map(int, t1.split(' ')))
-h = h + (m + t2) // 60 if (m + t2) >= 60 else h
-h = h % 24 if h >= 24 else h
-m = m + t2 if (m + t2) < 60 else (m + t2) % 60
-print(h, m)
+i=list(map(int,input().split()))
+print(max(i)*100) if len(set(i))==3 else print(10000+1000*i[0]) if len(set(i))==1 else \
+(print(1000+100*list(set(i))[0]) if i.count(list(set(i))[0])==2 else print(1000+100*list(set(i))[1]))
