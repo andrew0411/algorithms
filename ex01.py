@@ -1,3 +1,15 @@
+import numpy as np
+
 n=int(input())
-for i in range(3):
-    print('*'*3)
+trial=int(input())
+
+list = []
+for i in range(trial):
+    x = np.random.randint(low=0, high=n)
+    if x not in list:
+
+        list.append(np.random.randint(low=0, high=n))
+
+    else: break
+
+print(list)
