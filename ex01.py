@@ -1,3 +1,8 @@
-n=int(input())
-for i in range(3):
-    print('*'*3)
+def check(N):
+    for i in range(N):
+        if (i+sum(map(int,str(i)))) == N:
+            return i
+    return 0
+
+N = int(input())
+print(check(N))
