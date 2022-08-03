@@ -10,5 +10,4 @@ for i in ls:
         if i[0]<j[0] and i[1]<j[1]:
             cnt+=1
     idx.append(cnt+1)
-for i in idx:
-    print(i, end=' ')
+print(*idx)
